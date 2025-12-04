@@ -2,12 +2,13 @@
 
 ## Cloudflare + Gmail 
 https://community.cloudflare.com/t/solved-how-to-use-gmail-smtp-to-send-from-an-email-address-which-uses-cloudflare-email-routing/382769
+
 Note about updating the SPF record too
 ```
 "v=spf1 include:_spf.mx.cloudflare.net include:_spf.google.com ~all"
 ```
 
-
+### Details (in case link above doesn't work)
 When the "Send Verification" option doesn't appear for an external, non-Gmail address like test@example.com, it means Gmail is no longer automatically trusting its own forwarding system to handle the verification and requires you to use a secure SMTP (Outgoing Mail Server) connection instead.
 
 Since you're using a Cloudflare forwarder and not a full email hosting provider, the professional way to proceed is to explicitly configure Gmail to send the email using its own SMTP server, but using an App Password for security.
