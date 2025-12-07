@@ -10,7 +10,8 @@ Here is the revised, professional process to add your address:
 
         Sign up for a free Brevo account and follow all Brevo directions to authenticate the domain via DNS.
 
-        While updating DNS, set the following TXT record "v=spf1 include:spf.brevo.com include:_spf.mx.cloudflare.net ~all"
+        While updating DNS, set the following TXT record
+        "v=spf1 include:spf.brevo.com include:_spf.mx.cloudflare.net ~all"
         
         NEXT, [Brevo SMTP Settings](https://app.brevo.com/settings/keys/smtp)
         
@@ -23,7 +24,8 @@ Here is the revised, professional process to add your address:
     
         Now you will manually tell Gmail to use the SMTP server with your new Brevo SMTP Key.
         
-        Go back to your Gmail Settings: Settings (gear icon) > "See all settings" > "Accounts and Import" tab.
+        Go back to your Gmail Settings:
+        Settings (gear icon) > "See all settings" > "Accounts and Import" tab.
         
         In the "Send mail as" section, click "Add another email address."
         
